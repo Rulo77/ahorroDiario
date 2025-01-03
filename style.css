@@ -82,3 +82,23 @@ h1{
     justify-content: center;
     padding: 1rem;
 }
+
+@media screen and (max-width: 400px) {
+    body {
+        width: 100dvw;
+    }
+    #numAhorro {
+        padding: 1rem 3rem;
+    }
+    #numeros {
+        padding: 0rem;
+        font-size: .8rem;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    #numAhorroSection{
+        padding: 0.5rem;
+    }
+    
+}
