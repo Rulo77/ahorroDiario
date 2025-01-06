@@ -43,7 +43,7 @@ btn.addEventListener('click', () => {
 
     let intervalId = setInterval(() => {
         ahorro.children[0].textContent = arrayAhorros[Math.floor(Math.random() * arrayAhorros.length)].toString().padStart(3, '0');
-    }, 200);
+    }, 100);
 
     setTimeout(() => {
         clearInterval(intervalId);

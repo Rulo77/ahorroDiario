@@ -15,7 +15,7 @@ main {
     display: grid;
     grid:2;
     grid-template-columns: 1fr 2fr;
-    height: 100%;
+    height: 100dvh;
     width: 200%;
 
     & section {
@@ -23,7 +23,7 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 1rem;
+        padding: 0.3rem;
     }
 
     & p {
@@ -71,14 +71,14 @@ main {
     transform: scale(0.95);
 }
 
-#btnAhorro[disabled]:hover::after {
+#btnAhorro[disabled]:hover::before{
     content: attr(data-tooltip);
     position: absolute;
     background-color: #333;
     color: #fff;
     padding: 5px;
     border-radius: 5px;
-    bottom: 0%;
+    bottom: 3%;
     left: 70%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -141,7 +141,7 @@ h1{
     transform: scale(0.95);
 }
 
-#btnReset:hover:after{
+#btnReset:hover::before{
     content: attr(data-tooltip);
     position: absolute;
     background-color: #333;
@@ -149,7 +149,7 @@ h1{
     padding: 5px;
     border-radius: 5px;
     bottom: 81%;
-    transform: translateX(-35%);
+    transform: translateX(15%);
     white-space: nowrap;
     z-index: 2;
     font-size: 15px;
@@ -186,6 +186,12 @@ h1{
     }
     #numAhorroSection{
         padding: 0.5rem;
+    }
+    #btnReset:hover::before{
+        content: none;
+    }
+    #btnAhorro[disabled]:hover::before{
+        content: none;
     }
     
 }
