@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Ahorro</title>
 </head>
+
 <body>
     <main>
         <section>
-            <h1>Ahorro acumulado: <span>$</span><span id="ahorroAcumulado">0</span></h1>
+            <p>
+                Este es un programa que te ayudará a ahorrar dinero. Cada día tienes que tomar un numero, este se te
+                asigna al azar de entre
+                los 365 días del año y esa es la cantidad que tienes que ahorrar ese día. Al final del año habras
+                juntado la cantidad de $66,795.00 pesos
+            </p>
+            <p>
+                <h3>NOTA:</h3><span>solo se puede tomar uno por día</span>
+            </p>
         </section>
-        <section>
-            <div id="numeros">
-                aqui van los numeros del 1 al 365
-            </div>
-        </section>
-        <section id="numAhorroSection">
-            <h2>La cantidad que hay que ahorrar hoy es:</h2>
-            <div id="numAhorro"><span>0</span></div>
-            <button id="btnAhorro">Tomar un número aleatorio</button>
+        <section id="container">
+            <section>
+                <h1>Ahorro acumulado: <span>$</span><span id="ahorroAcumulado">0</span>
+                <button id="btnReset" data-tooltip="Reiniciar el ahorro a cero">Reiniciar</button></h1>
+            </section>
+            <section>
+                <div id="numeros">
+                    aqui van los numeros del 1 al 365
+                </div>
+            </section>
+            <section id="numAhorroSection">
+                <h2>La cantidad que hay que ahorrar hoy es:</h2>
+                <div id="numAhorro"><span>0</span></div>
+                <button id="btnAhorro" data-tooltip="Ya se tomo el número de hoy">Tomar un número aleatorio</button>
+            </section>
         </section>
     </main>
     <script src="src.js"></script>
 </body>
+
 </html>
